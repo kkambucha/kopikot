@@ -1,0 +1,65 @@
+/*-----------------------------------GLOBALS----------------------------------*/
+html, body {
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+}
+body{
+	font-size:0.625em;
+}
+/*-----------------------------------LAYERS----------------------------------*/
+footer {
+    max-width:1200px;
+    min-width:1000px;
+    margin:0 auto;
+    position:relative;
+    margin-top:-100px;
+    height:100px;
+    background:#646464;
+}
+header{
+    height:200px;
+    background-color:blue;
+}
+.l-wrap {
+	max-width:1200px;
+	min-width:1000px;
+	margin:0 auto;
+	position:relative; 
+	min-height:100%;
+	height:auto !important;
+	height:100%;
+	color: #000; 
+	text-align: left;
+}
+.l-empty {
+	
+}
+.l-leftcol{
+	width:200px;
+	float:left;
+	position:relative;
+}
+.l-rightcol{
+	width:200px;
+	float:right;
+	position:relative;
+}
+.l-centercol{
+	margin:0 200px 0 200px;
+	position:relative;
+}
+.l-clearer{
+	clear:both;
+}
+/*-----------------------------------BLOCKS----------------------------------*/
+
+
+/*-----------------------------------HOLDERS----------------------------------*/
+
+
+/*-----------------------------------HELPERS----------------------------------*/
+.bordered{
+	border:1px solid red;
+}
