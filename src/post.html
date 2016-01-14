@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link type="text/css" rel="stylesheet" href="css/main.css" />
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -101,19 +102,19 @@
 						
 						<div class="b-form__elements">
 							<div class="b-form__row">
-								<label for="comment_text" class="b-form__label">Комментарий:</label>
+								<label for="comment_text" class="b-form__label">Комментарий<span class="red">*</span>:</label>
 								<div class="b-form__input">
-									<textarea name="comment_text" id="" cols="30" rows="10"></textarea>	
+									<textarea name="comment_text" id="" cols="30" rows="10" required></textarea>	
 								</div>	
 							</div>
 							<div class="b-form__row">
-								<label for="name" class="b-form__label">Имя*:</label>
+								<label for="name" class="b-form__label">Имя<span class="red">*</span>:</label>
 								<div class="b-form__input">
 									<input type="text" name="name" required>
 								</div>		
 							</div>
 							<div class="b-form__row">
-								<label for="email" class="b-form__label">E-mail*:</label>
+								<label for="email" class="b-form__label">E-mail<span class="red">*</span>:</label>
 								<div class="b-form__input">
 									<input type="text" name="email" required>	
 								</div>
@@ -134,7 +135,7 @@
 
 			</div>
 
-			<div class="l-rightcol">
+			<div class="l-rightcol no-mobile">
 				<div class="b-aside-menu">
 					<h4 class="b-aside-menu__head">Свежие записи</h4>
 					<ul class="b-aside-menu__list">
