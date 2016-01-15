@@ -208,7 +208,7 @@ header{ @include clearfix(); font-family: $opensans; padding: 30px 0 0 0; backgr
 }
 .b-form { background: #f4f3f2;     padding: 36px 45px 45px 50px; margin-right: 23px; margin-bottom: 72px;
     &__form {  }
-    &__header { font-family: $ptserif; font-size: 4.4em; color: #2a2a2a; font-weight: $regular; margin: 0; }
+    &__header { font-family: $ptserif; font-size: 4.4em; color: #2a2a2a; font-weight: $regular; margin: 0; line-height: 0.9em; }
     &__text { color: #a3a2a2; font-size: 1.35em; margin: 1.2em 0 1.2em 0; font-family: $opensans; }
     &__elements { display: table; width: 100%; }
     &__row { display: table-row; }
