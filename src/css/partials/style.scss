@@ -130,6 +130,7 @@ header{ @include clearfix(); font-family: $opensans; padding: 30px 0 0 0; backgr
     &__input-wrapper { display: table-cell; }
 	&__input { font-size: 1.8em; color: #e9e8e6; background: #253134; border: 0; padding: 10px 14px; width: 247px; display: inline-block; font-family: $prx-light; width: 100%; }
 	& .btn-inline { display: table-cell; float: none; }
+    .btn-inline button { display: inline-block; width: 100%; border: 0; padding: 0; margin: 0; }
     .user-icon { width: 44px; height: 42px; display: block; }
 }
 .btn:hover { background: $btnColorHover; }
@@ -137,11 +138,11 @@ header{ @include clearfix(); font-family: $opensans; padding: 30px 0 0 0; backgr
     &--goto { background: $btnRedColor; }
     &--goto:hover { background: $btnRedColorHover; }
 }
-.btn-inline { width: 44px; height: 42px; display: inline-block; float: left; color: #fff; text-decoration: none; font-size: 20px; text-align: center; background: $btnColor; line-height: 40px; transition: $transition; vertical-align: middle;
+.btn-inline { width: 44px; height: 42px; display: inline-block; float: left; color: #fff; text-decoration: none; font-size: 20px; text-align: center; background: $btnColor; line-height: 40px; transition: $transition; vertical-align: middle; border: 0;
     &--user { background: #64cee5 url('../img/user-icon.png') center center no-repeat; }
     &--user:hover { background: #99e5f6 url('../img/user-icon.png') center center no-repeat; }
-    &--find { background: #f53e33; }
-    &--find:hover { background: #ff665d; }
+    &--find, &--find button { background: #f53e33; transition: $transition; }
+    &--find:hover, &--find button:hover { background: #ff665d; }
 }
 .btn--answer { background: #f0e0d0; color: #222425; font-size: 1.6em; }
 .btn--answer:hover { background: #faede1; }
