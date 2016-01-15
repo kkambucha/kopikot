@@ -179,11 +179,11 @@ header{ @include clearfix(); font-family: $opensans; padding: 30px 0 0 0; backgr
     &__text p { margin: 0; display: inline-block;  }
 }
 .b-aside-menu { font-family: $opensans; margin-bottom: 40px;
-    &__head { font-weight: $regular; font-size: 2.4em; color: #282828; }
-    &__href { color: #1f2a2e; text-decoration: none; }
-    &__href:hover { text-decoration: underline; }
-    &__list { color: #64cee5; font-size: 1.4em; margin-left: -38px; margin-bottom: 20px; }
-    &__list li { margin-top: 10px; margin-bottom: 10px; }
+    &__head, h3 { font-weight: $regular; font-size: 2.4em; color: #282828; }
+    &__href, ul a { color: #1f2a2e; text-decoration: none; }
+    &__href:hover, ul a:hover { text-decoration: underline; }
+    &__list, ul { color: #64cee5; font-size: 1.4em; margin-left: -38px; margin-bottom: 20px; }
+    &__list li, ul li { margin-top: 10px; margin-bottom: 10px; }
 }
 .b-aside-menu--blue {
     .b-aside-menu__href { color: #64cee5; }
@@ -219,6 +219,13 @@ header{ @include clearfix(); font-family: $opensans; padding: 30px 0 0 0; backgr
     &__button { padding-left: 20%; margin: 1em 0; }
     .error { font-size: 1.3em; margin-bottom: 0.5em; display: block; color: #ff2d33; }
     input.error, textarea.error { border: 1px solid #ff2d33; color: #282828; }
+}
+.pagination { display: block; margin: 30px 0; font-size: 1.8em; font-family: $opensans;
+    .page-numbers { text-decoration: none; display: inline-block; margin-right: 0.3em; color: #00bddb; }
+    .page-numbers:hover { text-decoration: underline; }
+    .current { color: #a1a0a0; }
+    .current:hover { text-decoration: none; cursor: pointer; }
+    .next .page-numbers {  }
 }
 /*-----------------------------------HOLDERS----------------------------------*/
 
