@@ -64,6 +64,7 @@ $(document).ready(function(){
 		    }
 		  }
 		});
+		// $('#commentform').find('[class ^= comment-]').wrapAll('<div class="b-form__elements">');
 	}
 
 });
