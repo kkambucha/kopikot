@@ -32,17 +32,21 @@
 	.b-comments__content { padding-left: 43px; }
 	.b-comments__item--has-answer .b-comments__content { background-position: 17px 70px; }
 	.b-comments__text { padding-top: 3px; }
-	.b-comments__item--has-answer .b-comments__item:nth-child(3) { background-position: 17px top; padding-top: 17px; }
-	.b-comments__item--has-answer .b-comments__item { padding-left: 56px; }
+	.b-comments__item--has-answer .b-comments__item:nth-child(3), .b-comments .children { background-position: 17px top; padding-top: 17px; }
+	.b-comments__item--has-answer .b-comments__item, .b-comments .children .b-comments__item { padding-left: 56px; }
 	.b-form { padding: 30px 30px 45px 30px !important; margin-right: 30px; }
-	.b-form__header { font-size: 2.72em !important; }
-	.b-form__text { width: 60%; font-size: 1.3em; margin: 1em 0 0.5em 0; line-height: 1.6em; }
+	.b-form__header, .b-form .comment-reply-title { font-size: 2.72em !important; }
+	.b-form__text, .b-form .comment-notes { width: 60%; font-size: 1.3em; margin: 1em 0 0.5em 0; line-height: 1.6em; }
 	.b-form__elements, .b-form__row, .b-form__label, .b-form__input { display: block; }
-	.b-form__button { padding-left: 0; margin: 2em 0 0 0; }
+	.b-form .comment-form-comment, .b-form .comment-form-author, .b-form .comment-form-email, .b-form .comment-form-url, .b-form .comment-form p label, .b-form .comment-form p input { display: block; }
+	.b-form .comment-form p label { width: auto; }
+	.b-form__button, .b-form p.form-submit { padding-left: 0; margin: 2em 0 0 0; }
 	.b-post__comments { padding-right: 30px; }
 	.l-rightcol { padding-left: 30px; padding-right: 30px; }
 	.b-post__text { margin-bottom: 24px; }
 	.b-aside-menu__list, .b-aside-menu ul { margin-left: -20px; }
+	.b-form p.form-submit input {  }
+	.b-form .comment-notes { width: auto; }
 }
 
 /* ----------------------------- MOBILE --------------------------- */
@@ -61,6 +65,7 @@
 	.b-faces__wrapper, .b-faces__row, .b-faces__img { display: block; }
 	.b-faces { margin-bottom: 0; margin-top: 5px; }
 	.b-form__button { font-size: 0.8em; }
+	.b-form p.form-submit input { font-size: 1em; }
 }
 /* ----------------------------- DESKTOP --------------------------- */
 @media screen and (max-width:1000px) {

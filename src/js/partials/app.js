@@ -41,8 +41,8 @@ $(document).ready(function(){
 	}, "Пожалуйста, введите корректный email.");
 
 
-	if($('#post-form').length > 0){
-		$('#post-form').validate({
+	if($('#commentform').length > 0){
+		$('#commentform').validate({
 			lang: 'ru',
 			invalidHandler: function(event, validator) {
 		    // 'this' refers to the form

@@ -1,0 +1,40 @@
+<div id="respond" class="comment-respond">
+    <h3 id="reply-title" class="comment-reply-title">Добавить комментарий 
+    
+    <small>
+    	<a rel="nofollow" id="cancel-comment-reply-link" href="/?p=8#respond" style="display:none;"> Отменить ответ </a>
+    </small>
+    		
+    </h3>
+    <form action="http://localhost:8080/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+        <p class="comment-notes">
+        	<span id="email-notes">Ваш e-mail не будет опубликован.</span> Обязательные поля помечены 
+        	<span class="required">*</span>
+        </p>
+        <p class="comment-form-comment">
+        	<label for="comment">Комментарий</label> 
+        	<textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required="required"></textarea>
+        </p>
+        <p class="comment-form-author">
+        	<label for="author">Имя 
+        		<span class="required">*</span>
+        	</label> 
+        	<input id="author" name="author" type="text" value="Тест" size="30" aria-required="true" required="required" style="cursor: auto; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
+        </p>
+        <p class="comment-form-email">
+        	<label for="email">E-mail 
+        		<span class="required">*</span>
+        	</label> 
+        	<input id="email" name="email" type="text" value="test@kopikot.ru" size="30" aria-describedby="email-notes" aria-required="true" required="required">
+        </p>
+        <p class="comment-form-url">
+        	<label for="url">Сайт</label> 
+        	<input id="url" name="url" type="text" value="" size="30">
+        </p>
+        <p class="form-submit">
+        	<input name="submit" type="submit" id="submit" class="submit" value="Отправить комментарий"> 
+        	<input type="hidden" name="comment_post_ID" value="8" id="comment_post_ID">
+            <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+        </p>				
+    </form>
+</div>

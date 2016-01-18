@@ -1,0 +1,35 @@
+<form action="#" method="POST" class="b-form__form" id="post-form">
+	<h5 class="b-form__header">Добавить комментарий</h5>
+	<p class="b-form__text">Ваш e-mail не будет опубликован. Обязательные поля помечены *</p>
+	
+	<div class="b-form__elements">
+		<div class="b-form__row">
+			<label for="comment_text" class="b-form__label">Комментарий<span class="red">*</span>:</label>
+			<div class="b-form__input">
+				<textarea name="comment_text" id="" cols="30" rows="10" required></textarea>	
+			</div>	
+		</div>
+		<div class="b-form__row">
+			<label for="name" class="b-form__label">Имя<span class="red">*</span>:</label>
+			<div class="b-form__input">
+				<input type="text" name="name" required>
+			</div>		
+		</div>
+		<div class="b-form__row">
+			<label for="email" class="b-form__label">E-mail<span class="red">*</span>:</label>
+			<div class="b-form__input">
+				<input type="text" name="email" required>	
+			</div>
+		</div>
+		<div class="b-form__row">
+			<label for="site" class="b-form__label">Сайт:</label>
+			<div class="b-form__input">
+				<input type="text" name="site">	
+			</div>
+		</div>	
+	</div>
+	
+	<div class="b-form__button">
+		<input type="submit" class="btn btn--form" value="Добавить комментарий" title="Добавить комментарий">	
+	</div>
+</form>
